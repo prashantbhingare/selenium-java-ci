@@ -19,6 +19,7 @@ public class GoogleTest {
     @Test
     public void testGoogleTitle() {
         driver.get("https://www.google.com");
+        
         Assertions.assertTrue(driver.getTitle().contains("Google"));
     }
 
