@@ -35,4 +35,3 @@ jobs:
         with:
           name: Test-Report
           path: target/site/surefire-report.html
-
