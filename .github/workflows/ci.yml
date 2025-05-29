@@ -26,3 +26,13 @@ jobs:
 
       - name: Run Selenium Tests
         run: mvn test
+
+      - name: Generate Surefire Report
+        run: mvn surefire-report:report
+
+      - name: Upload Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: Test-Report
+          path: target/site/surefire-report.html
+
